@@ -12,7 +12,7 @@ const handleFieldTypeChange = () => {
     }
 }
 
-const rednderTable = (rowInput) => {
+const renderTable = (rowInput) => {
     const tableBody = document.getElementById("fieldsTable");
     const tableRow = document.createElement("tr");
 
@@ -33,7 +33,7 @@ const addField = () => {
     const radioOptions = document.getElementById("radioOptionsField")?.value;
 
     const formFields = {label,fieldType,radioOptions,isRequired};
-    rednderTable(formFields);
+    renderTable(formFields);
     fields.push(formFields);
 
     document.getElementById("label").value = "";
